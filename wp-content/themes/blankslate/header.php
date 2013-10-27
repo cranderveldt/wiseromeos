@@ -5,6 +5,8 @@
 <meta name="viewport" content="width=device-width" />
 <title><?php wp_title(' | ', true, 'right'); ?></title>
 <link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_uri(); ?>" />
+<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/bootstrap.css" />
+<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/custom.css" />
 <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
