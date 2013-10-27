@@ -7,6 +7,8 @@
 <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_uri(); ?>" />
 <?php wp_head(); ?>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/js/script.js"></script>
 </head>
 <body <?php body_class(); ?>>
   <div id="wrapper" class="hfeed">
