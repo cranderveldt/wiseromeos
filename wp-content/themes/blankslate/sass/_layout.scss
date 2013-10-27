@@ -6,7 +6,10 @@ body {
   line-height: 1.3;
   @include font-size;
   font-weight: 400;
-  @include gradient(#444, #222);
+  background: #FFF;
+  @include above-width(600px) {
+    @include gradient(#444, #222);
+  }
   height: 100%;
 }
 body, input, select, button, label {
