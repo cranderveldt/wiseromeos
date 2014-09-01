@@ -7,9 +7,6 @@ body {
   @include font-size;
   font-weight: 400;
   background: #FFF;
-  @include above-width(600px) {
-    @include gradient(#444, #222);
-  }
   height: 100%;
 }
 body, input, select, button, label {
@@ -48,15 +45,9 @@ h1, h2, h3, h4, h5, h6, .h0, .h1, .h2, .h3, .h4, .h5, .h6, .h7 {
 p, .base p, .base {
   @include font-size;
 }
-#wrapper {
-  max-width: 600px;
+#content {
+  @include max-width(600px);
   margin: auto;
-  background: #FFF;
-  @include box-shadow(0 0 40px rgba(0,0,0,.6));
-  @include above-width(600px) {
-    margin: 30px auto;
-    border: 3px solid #131519;
-  }
 }
 #container {
   padding: 30px 20px;
@@ -117,5 +108,19 @@ p, .base p, .base {
 body {
   #cntctfrm_contact_form input.text, #cntctfrm_contact_form textarea, #cntctfrm_contact_message, #cntctfrm_contact_name, #cntctfrm_contact_email, #cntctfrm_contact_subject {
     width: 100%;
+  }
+}
+.projects {
+  margin-bottom: 20px;
+  .project {
+    display: block;
+    @include intrinsic-ratio('a', 100%);
+    margin: 0;
+  }
+  a {
+    display: block;
+    background: transparent url() center center no-repeat;
+    background-size: cover;
+    margin: 0;
   }
 }
